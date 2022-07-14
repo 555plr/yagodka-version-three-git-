@@ -1,0 +1,276 @@
+body {
+    background-color: coral;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ul.ulnav{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul.ulnav li{
+    display: inline;
+}
+
+ul.ulnav a{
+    float: left;
+    display: inline-block;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnav a:hover{
+    float: left;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+section.hhhh{
+    width: 100%;
+
+}
+
+div.buttonprofile{
+    border: solid 3px rgb(255, 184, 158);
+    border-radius: 30px;
+    height: 90px;
+}
+
+
+h1.yagodka{
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    display: inline;
+}
+
+ul.ulnavmain{
+    display: inline;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+ul.ulnavmain li{
+    display: inline;
+}
+
+ul.ulnavmain a{
+    float: right;
+    display: inline-block;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #a4c6c5;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnavmain a:hover{
+    float: right;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #40bec6;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.people{
+    float: right;
+    width: 80%;
+    margin-top: 100px;
+}
+
+
+
+
+
+div.eachhumans {
+    display: inline-block;
+    border: solid 2px rgb(255, 184, 158);
+    border-radius: 10px;
+    min-width: 23%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+div.eachhumans a {
+    display: inline;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.ulnav{
+    width: 100%;
+    display: block;
+}
+
+
+
+
+section.message{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    border: solid 10px rgb(255, 184, 158);
+    border-radius: 10px;
+    background-color: #FBEFFF;
+    margin-left: 40%;
+    width: 800px;
+
+    padding: 25px;
+}
+
+div.eachmessage{
+    border: solid 5px rgb(255, 184, 158);
+    min-height: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+a.who{
+    display: block;
+    font-size: 1.5em;
+    color: coral;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+a.messagetext{
+    font-size: 1.4em;
+    color: #40bec6;
+    font-weight: bold;
+}
+
+
+section.send{
+    margin-top: 100px;
+    border: solid 10px rgb(255, 184, 158);
+    border-radius: 10px;
+    background-color: #FBEFFF;
+    margin-left: 40%;
+    width: 800px;
+
+    padding: 25px;
+}
+
+
+input[type="submit"]
+{
+    margin-left: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover
+{
+    margin-left: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}
+
+textarea{
+    border-radius: 4px;
+    border: solid 10px rgb(255, 184, 158);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+}
+
+textarea:focus
+{
+    border-radius: 4px;
+    border: solid 10px rgb(255,209,194);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+    box-shadow: 0 0 20px rgba(255,233,226,0.5);
+}
+
+
+
+section.osaite1{
+    margin-top: 100px;
+}
+
+h3.firstosaite{
+    font-size: 2em;
+    margin-left: 300px
+}
+
+h3.secondosaite{
+    font-size: 1.7em;
+    margin-left: 310px;
+}
+
+
+
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" th:href="@{/styles/mans.css}" type="text/css" />
+    <link rel="icon" th:href="@{/styles/favicon.ico}"  type="images/x-icon">
+    <title>Анкеты: Мужчины</title>
+</head>
+
+
+<body>
+
+<section class="hhhh">
+
+    <div class="buttonprofile">
+
+        <h1 class="yagodka">YAGONKAA.RU</h1>
+
+        <img th:src="@{/styles/imageone.png}" alt="Корзина ягод" height="90%">
+        <img th:src="@{/styles/imagetwo.png}" alt="Корзина ягод" height="90%">
+        <img th:src="@{/styles/imagethree.png}" alt="Корзина ягод" height="90%">
+        <img th:src="@{/styles/imagefour.png}" alt="Корзина ягод" height="90%">
+
+        <ul class="ulnavmain">
+            <li><a  th:href="@{/logout}">Выйти</a></li>
+            <li><a th:href="@{/chats}">Сообщения</a></li>
+            <li><a th:href="@{/myprofile}">Мой профиль</a></li>
+
+        </ul>
+
+    </div>
+</section>
+
+
+<ul class="ulnav">
+    <li><a th:href="@{/}">Все анкеты</a></li>
+    <li><a th:href="@{/liked}">Понравившиеся</a></li>
+    <li><a th:href="@{/main/mans}">Анкеты: мужчины</a></li>
+    <li><a th:href="@{/main/womans}">Анкеты: женщины</a></li>
+    <li><a th:href="@{/main/other}">Анкеты: другое</a></li>
+    <li><a th:href="@{/site}">О сайте</a></li>
+</ul>
+<section class="mans">
+    <div class="eachmans" th:each="element : ${mans}">
+
+        <a th:href="@{/id{id}(id = ${element.id})}">
+            <img th:src="@{/images/{id}(id = ${element.image.id})}" width="350" alt="Пока что нет фото">
+        </a> <br>
+
+        <a class="item" th:href="@{/id{id}(id = ${element.id})}" th:text="${element.nickname}">Nickname</a>,
+        <a class="item" th:href="@{/id{id}(id = ${element.id})}" th:text="${element.age}">Age</a>
+    </div>
+</section>
+
+</body>
+
+</html>

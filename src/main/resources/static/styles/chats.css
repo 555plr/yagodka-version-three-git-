@@ -1,0 +1,218 @@
+body {
+    background-color: coral;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ul.ulnav{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul.ulnav li{
+    display: inline;
+}
+
+ul.ulnav a{
+    float: left;
+    display: inline-block;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnav a:hover{
+    float: left;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+section.hhhh{
+    width: 100%;
+
+}
+
+div.buttonprofile{
+    border: solid 3px rgb(255, 184, 158);
+    border-radius: 30px;
+    height: 90px;
+}
+
+
+h1.yagodka{
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    display: inline;
+}
+
+ul.ulnavmain{
+    display: inline;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+ul.ulnavmain li{
+    display: inline;
+}
+
+ul.ulnavmain a{
+    float: right;
+    display: inline-block;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #a4c6c5;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnavmain a:hover{
+    float: right;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #40bec6;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+
+
+div.ulnav{
+    width: 100%;
+    display: block;
+    border: solid 1px rgb(255, 184, 158);
+
+}
+
+
+section.chats{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 20%;
+    padding: 25px;
+
+}
+
+div.eachchat{
+    border: solid 1px rgb(255, 184, 158);
+}
+
+form{
+    display: inline;
+}
+
+p{
+    margin-top: 20px;
+    display: inline;
+}
+
+div.chats{
+    text-align: center;
+    height: 50px;
+    border: solid 7px #c4d8ff;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div.chats p.numberchat,
+div.chats label{
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: chocolate;
+}
+
+div.chats p.pnickname1{
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+a.eachchat{
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+div.allchat{
+
+    float: left;
+    width: 900px;
+    margin-bottom: 15px;
+}
+
+div.delchat{
+    float: right;
+    display: inline;
+}
+
+button[type="submit"]
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: coral;
+    border: solid 5px white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover
+{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: coral;
+    border: solid 5px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}

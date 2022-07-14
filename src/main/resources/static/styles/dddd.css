@@ -1,0 +1,453 @@
+body {
+    background-color: coral;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: solid 5px;
+    padding-bottom: 5px;
+}
+
+
+section.first{
+    text-align: center;
+}
+
+h2.h1namesite{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2.h1popular{
+    font-size: 2.3em;
+}
+
+
+
+
+.formdiv {
+    margin-bottom: 20px;
+}
+
+.forminput1,
+.forminput3{
+    font-size: 1.2em;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+
+
+
+button[type="submit"]
+{
+    margin-left: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover
+{
+    margin-left: 60px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+input[type="submit"]
+{
+    margin-left: 120px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover
+{
+    margin-left: 120px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: coral;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+
+.refreg {
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 90px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+
+}
+
+.refreg:hover{
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 90px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+input[type="password"],
+input[type="text"],
+.subform textarea {
+    border-radius: 4px;
+    border: solid 10px rgb(255, 184, 158);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus
+{
+    border-radius: 4px;
+    border: solid 10px rgb(255,209,194);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+    box-shadow: 0 0 20px rgba(255,233,226,0.5);
+}
+
+.incorrectmassage {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+textarea{
+    border-radius: 4px;
+    border: solid 10px rgb(255, 184, 158);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+}
+
+textarea:focus
+{
+    border-radius: 4px;
+    border: solid 10px rgb(255,209,194);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+    box-shadow: 0 0 20px rgba(255,233,226,0.5);
+}
+
+select{
+    border-radius: 4px;
+    border: solid 10px rgb(255, 184, 158);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+}
+
+select:focus
+{
+    border-radius: 4px;
+    border: solid 10px rgb(255,209,194);
+    font-size: 20px;
+    color: rgb(255, 146, 57);
+    font-weight: bold;
+    padding: 3px;
+    outline : none;
+    box-shadow: 0 0 20px rgba(255,233,226,0.5);
+}
+
+.successfully{
+    font-size: 2em;
+}
+
+
+.reflog{
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 90px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+.reflog:hover{
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 90px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+
+
+
+section.forminfouser,
+section.formmyprofile{
+    margin-top: 20px;
+    float: right;
+    width: 63%;
+}
+
+section.formlog,
+section.formreg{
+    margin-top: 70px;
+    float: right;
+    width: 63%;
+}
+
+
+div.fffsss{
+    width: 29%;
+    display: inline;
+    float: left;
+}
+
+img{
+    float: left;
+    margin-left: 50px;
+
+}
+
+h3{
+    display: inline;
+    font-size: 1.7em;
+    float: left;
+    margin-left: 70px;
+    margin-bottom: 0px;
+}
+
+div.fffsssinfouser{
+    margin-top: 200px;
+    width: 29%;
+    display: inline;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+section.formmyprofile{
+    margin-top: 50px;
+    margin-left: 28%;
+    border: solid 10px rgb(255, 184, 158);
+
+
+
+}
+
+div.imagemyprofile {
+    float: right;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.ulnav{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul.ulnav li{
+    display: inline;
+}
+
+ul.ulnav a{
+    float: left;
+    display: inline-block;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnav a:hover{
+    float: left;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+section.hhhh{
+    width: 100%;
+
+}
+
+div.buttonprofile{
+    border: solid 3px rgb(255, 184, 158);
+    border-radius: 30px;
+    height: 90px;
+}
+
+
+h1.yagodka{
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    display: inline;
+}
+
+ul.ulnavmain{
+    display: inline;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+ul.ulnavmain li{
+    display: inline;
+}
+
+ul.ulnavmain a{
+    float: right;
+    display: inline-block;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #a4c6c5;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnavmain a:hover{
+    float: right;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #40bec6;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+div.ulnav{
+    width: 100%;
+    display: block;
+    border: solid 1px rgb(255, 184, 158);
+
+}
+
+
+

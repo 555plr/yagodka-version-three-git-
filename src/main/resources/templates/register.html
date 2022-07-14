@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" th:href="@{/styles/dddd.css}" type="text/css" />
+    <link rel="icon" th:href="@{/styles/favicon.ico}"  type="images/x-icon">
+    <title>Регистрация</title>
+</head>
+
+<body>
+
+
+<section class="first">
+
+    <h2 class="h1namesite">YAGODKAA.RU</h2>
+
+    <h2 class="h1popular">Самый популярный сайт знакомств в Липецке</h2>
+
+</section>
+
+<div class="fffsss">
+    <h3>Проходите, регистрируйтесь</h3>
+
+    <img th:src="@{/styles/imagetwo.png}" alt="Клубника" width="80%">
+
+</div>
+
+
+
+<section class="formreg">
+<h1>Новый аккаунт</h1>
+<form method="post" th:action="@{/edit}" class="forminput1" th:object="${user}">
+    <div class="formdiv">
+        <label for="username">Введите вашу почту</label>
+        <input type="text" th:field="*{username}" name="username" placeholder="" id="username" />
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('username')}">Некорректный адрес почты</small>
+    </div>
+    <div class="formdiv">
+        <label for="password">Придумайте пароль</label>
+        <input type="password" th:field="*{password}" name="password" placeholder="" id="password" />
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('password')}" >Некорректный пароль</small>
+    </div>
+    <div class="formdiv">
+        <label for="repeatPassword">Повторите пароль</label>
+        <input type="password" th:field="*{repeatPassword}" name="repeatPassword" placeholder="" id="repeatPassword" />
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('repeatPassword')}" >Некорректный пароль</small>
+    </div>
+    <div>
+        <input type="submit" value="Зарегистрироваться" />
+    </div>
+</form>
+
+</section>
+</body>
+
+</html>
+
+<!-- <small class="form-text text-danger" th:if="${#fields.errors('repeatPassword')}" th:errors="*{repeatPassword}">Некорректный пароль</small> -->

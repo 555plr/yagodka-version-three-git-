@@ -1,0 +1,161 @@
+body {
+    background-color: coral;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+ul.ulnav{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul.ulnav li{
+    display: inline;
+}
+
+ul.ulnav a{
+    float: left;
+    display: inline-block;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px white;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnav a:hover{
+    float: left;
+    color: coral;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px rgb(255, 184, 158);
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+section.hhhh{
+    width: 100%;
+
+}
+
+div.buttonprofile{
+    border: solid 3px rgb(255, 184, 158);
+    border-radius: 30px;
+    height: 90px;
+}
+
+
+h1.yagodka{
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    display: inline;
+}
+
+ul.ulnavmain{
+    display: inline;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+ul.ulnavmain li{
+    display: inline;
+}
+
+ul.ulnavmain a{
+    float: right;
+    display: inline-block;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #a4c6c5;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: #FBEFFF;
+    text-decoration: none;
+}
+
+ul.ulnavmain a:hover{
+    float: right;
+    color: #40bec6;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 4px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid 10px #40bec6;
+    cursor: pointer;
+    border-radius: 10px;
+    outline : none;
+    background: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.mans{
+    float: right;
+    width: 80%;
+    margin-top: 100px;
+}
+
+
+
+
+
+div.eachmans {
+    display: inline-block;
+    border: solid 2px rgb(255, 184, 158);
+    border-radius: 10px;
+    min-width: 23%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+div.eachmans a {
+    display: inline;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.ulnav{
+    width: 100%;
+    display: block;
+    border: solid 1px rgb(255, 184, 158);
+
+}

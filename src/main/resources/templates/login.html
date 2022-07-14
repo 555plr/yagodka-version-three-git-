@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" th:href="@{/styles/login.css}" type="text/css" />
+    <link rel="icon" th:href="@{/styles/favicon.ico}"  type="images/x-icon">
+    <title>Вход на сайт</title>
+</head>
+
+<body>
+
+<section class="first">
+
+    <h2 class="h1namesite">YAGODKAA.RU</h2>
+
+    <h2 class="h1popular">Самый популярный сайт знакомств в Липецке</h2>
+
+</section>
+
+<div class="fffsss">
+    <h3>Проходите, регистрируйтесь</h3>
+
+    <img th:src="@{/styles/imageone.png}" alt="Корзина ягод" width="80%">
+
+</div>
+
+
+
+
+
+<section class="formlog">
+
+
+<h1 class="h1login">Вход на сайт</h1>
+
+<form th:action="@{/authenticateTheUser}" method="post" class="forminput1">
+    <div class="formdiv">
+        <label for="username">Введите вашу почту</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Ваша почта">
+        <small class="incorrectmassage" th:if="${param.error != null}">Некорректное имя пользователя или пароль</small>
+    </div>
+    <div class="formdiv">
+        <label for="password">Введите ваш пароль</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Ваш пароль">
+    </div>
+    <button type="submit" class="btn btn-primary">Войти</button>
+    <a class="refreg" th:href="@{/register}">Регистрация</a>
+</form>
+
+</section>
+
+</body>
+
+</html>

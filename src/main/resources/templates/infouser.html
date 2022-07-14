@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" th:href="@{/styles/dddd.css}" type="text/css" />
+    <link rel="icon" th:href="@{/styles/favicon.ico}"  type="images/x-icon">
+    <title>Информация о пользователе</title>
+</head>
+
+<body>
+
+<div class="fffsssinfouser">
+
+    <img th:src="@{/styles/imagethree.png}" alt="Корзина ягод" width="80%">
+
+
+</div>
+
+
+
+<section class="forminfouser">
+<h1>Напишите о себе</h1>
+<form th:method="PATCH" th:action="@{/edit}" class="forminput3" th:object="${obinfouser}">
+    <div>
+        <input type="hidden" th:field="*{id}" />
+    </div>
+
+    <div class="formdiv">
+        <label for="nickname">Как вас зовут</label>
+        <input type="text" th:field="*{nickname}" name="nickname" placeholder="" id="nickname" />
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('nickname')}">Некорректные данные</small>
+    </div>
+
+    <div class="formdiv">
+        <label for="gender">Ваш пол</label>
+        <select th:field="*{gender}" name="gender" placeholder="" id="gender">
+            <option value="мужской">мужской</option>
+            <option value="женский">женский</option>
+            <option value="другое">другое</option>
+        </select>
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('gender')}">Некорректные данные</small>
+    </div>
+
+    <div class="formdiv">
+        <label for="age">Сколько вам лет</label>
+        <input type="text" th:field="*{age}" name="age" placeholder="" id="age" />
+        <small class="form-text text-danger" th:each="elementErr : ${#fields.errors('age')}">Некорректные данные</small>
+    </div>
+
+    <div class="formdiv">
+        <label for="info">О себе</label>
+        <textarea cols="30" rows="10" th:field="*{info}" class="textarea1" name="info" placeholder="О себе" id="info">
+
+            </textarea>
+    </div>
+
+
+    <div>
+        <input type="submit" value="Сохранить" />
+    </div>
+</form>
+
+</section>
+</body>
+
+</html>
